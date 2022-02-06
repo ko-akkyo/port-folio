@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+@media (min-width: 769px) {
+  body {
+    font-size: 2.4rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  margin-bottom: 12rem;
+}
+
+.section-title {
+  font-size: 4.8rem;
+  font-weight: 100;
+  color: #666;
+  text-align: center;
+  margin: 0 0 5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 102rem;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 102rem;
+  margin: 0 auto;
+  height: 20rem;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 3rem;
+  width: 5rem;
+  height: 5rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.nav {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .nav {
+    float: left;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+  }
+}
+
+.nav-item {
+  padding-left: 5rem;
+}
+@media (max-width: 768px) {
+  .nav-item {
+    padding: 2rem 3rem;
+    border: 1px solid #999;
+    width: 33.3333333333%;
+  }
+}
+
+.nav-link {
+  color: #666;
+}
+
+.cover {
+  background-color: #f2f9fa;
+  height: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.cover-box {
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50%;
+  height: 60%;
+  max-width: 700px;
+}
+@media (max-width: 768px) {
+  .cover-box {
+    text-align: start;
+  }
+}
+
+.top-title {
+  font-size: 2.4rem;
+  font-weight: 100;
+  line-height: 2.5;
+  color: #333;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+  .top-title {
+    writing-mode: vertical-rl;
+    font-size: 1.6rem;
+    margin: 0 auto;
+  }
+}
+
+.skill-item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 6rem);
+  padding: 0 3rem;
+}
+
+.skill-title {
+  text-size: 3rem;
+  font-weight: 200;
+  margin: 2rem;
+}
+
+.skill-img {
+  width: 15rem;
+  height: 15rem;
+  background-color: #f2f9fa;
+  border-radius: 50%;
+}
+
+.skill-text {
+  height: 25rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding: 0 2rem;
+}
+
+.work-item {
+  background-color: #f2f9fa;
+  width: calc(100% - 6rem);
+  height: 25rem;
+  margin: 0 3rem;
+}
+
+.footer {
+  max-width: 102rem;
+  margin: 0 auto;
+  height: 10rem;
+  position: relative;
+}
+
+.footer-nav {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copylight {
+  position: absolute;
+  bottom: 5rem;
+  right: 0;
+  font-size: 1.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */
