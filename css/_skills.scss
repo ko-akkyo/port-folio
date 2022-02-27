@@ -1,0 +1,32 @@
+.skill-item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 6rem);
+  padding: 0 3rem;
+}
+
+.skill-title {
+  text-size: 3rem;
+  font-weight: 200;
+  margin: 2rem;
+}
+
+.skill-img {
+  width: 15rem;
+  height: 15rem;
+  background-color: $light-blue;
+  border-radius: 50%;
+}
+
+.skill-text {
+  height: 16rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding: 0 2rem;
+  @media (max-width: 768px) {
+    height: 15rem;
+    padding: 0;
+  }
+}

@@ -1,0 +1,9 @@
+.work-item {
+  background-color: $light-blue;
+  width: calc(100% - 6rem);
+  height: 25rem;
+  margin: 0 3rem;
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
+}

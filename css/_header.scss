@@ -1,0 +1,55 @@
+.header {
+  max-width: 106rem;
+  margin: 0 auto;
+  height: 15rem;
+  position: relative;
+  @media (max-width: 768px) {
+    height: 20rem;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 3rem;
+  width: 5rem;
+  height: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  padding-left: 2rem;
+  @media (max-width: 768px) {
+    top: 1rem;
+  }
+}
+
+.nav {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  .nav-item:last-child {
+    padding-right: 2rem;
+  }
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    .nav-item:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.nav-item {
+  padding-left: 5rem;
+  @media (max-width: 768px) {
+    padding: 1rem 0;
+    border: 1px solid #999;
+    width: calc((100% - 0.4rem) / 2);
+  }
+}
+
+.nav-link {
+  color: #666;
+}

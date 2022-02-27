@@ -1,0 +1,46 @@
+.contact {
+  max-width: 102rem;
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 200;
+  @media (max-width: 768px) {
+    padding: 0 3rem;
+    font-size: 1.6rem;
+  }
+}
+
+
+.contact-text {
+  margin: 0;
+}
+
+.pc-mail {
+
+}
+
+.icon-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 25rem;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    max-width: 20rem;
+  }
+}
+
+.icon {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: $light-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.6rem;
+  @media (max-width: 768px) {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.4rem;
+  }
+}

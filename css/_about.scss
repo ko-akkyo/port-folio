@@ -1,0 +1,35 @@
+.about {
+  width: calc(100% - 6rem);
+}
+
+.about-img-box {
+  width: calc((100% - 5rem) *0.33);
+  @media (max-width: 768px) {
+    width: 66%;
+  }
+}
+
+.about-text {
+  width: calc((100% - 5rem) * 0.66);
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.profile-box {
+  margin: 0;
+  padding: 2rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.profile-p {
+  margin: 0;
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+  }
+}

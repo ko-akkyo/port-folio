@@ -1,0 +1,62 @@
+// 変数
+$light-blue: #f2f9fa;
+$white: #fff;
+$blue: #d8f3fa;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    @media (min-width: 769px) {
+        font-size: 2.4rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+   padding: 0;
+   margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.section {
+    margin-bottom: 5rem;
+}
+
+.section-title {
+    font-size: 4.8rem;
+    font-weight: 100;
+    color: #666;
+    text-align: center;
+    margin: 0 0 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 102rem;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+        //flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.pc {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

@@ -1,0 +1,106 @@
+.cover {
+  background-color: $light-blue;
+  height: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.cover-box {
+  position: relative;
+  text-align: center;
+  background-color: $white;
+  border-radius: 50%;
+  width: 50%;
+  height: 60%;
+  max-width: 600px;
+  padding: 3rem;
+  @media (max-width: 768px) {
+    text-align: start;
+  }
+}
+
+.top-title {
+  font-size: 2.4rem;
+  font-weight: 100;
+  line-height: 2.5;
+  color: #333;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  @media (max-width: 768px) {
+    writing-mode: vertical-rl;
+    font-size: 1.6rem;
+    margin: 0 auto;
+  }
+}
+
+.circle {
+  position: absolute;
+  background-color: $blue;
+  border-radius: 50%;
+}
+
+.circle1 {
+  width: 15rem;
+  height: 15rem;
+  top: 10%;
+  left: 5%;
+}
+
+.circle2 {
+  width: 10rem;
+  height: 10rem;
+  top: 40%;
+  left: 15%;
+}
+
+.circle3 {
+  width: 8rem;
+  height: 8rem;
+  top: 80%;
+  left: 12%;
+}
+
+.circle4 {
+  width: 8rem;
+  height: 8rem;
+  top: 15%;
+  right: 5%;
+}
+
+.circle5 {
+  width: 10rem;
+  height: 10rem;
+  top: 40%;
+  right: 10%;
+}
+
+.circle6 {
+  width: 15rem;
+  height: 15rem;
+  top: 75%;
+  right: 5%;
+}
+
+@media (max-width: 768px) {
+  .circle2, .circle4,.circle6 {
+    display: none;
+  }
+}
+
+.animated {
+  transition: all 0.7s;
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}

@@ -1,0 +1,445 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+@media (min-width: 769px) {
+  body {
+    font-size: 2.4rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  font-size: 4.8rem;
+  font-weight: 100;
+  color: #666;
+  text-align: center;
+  margin: 0 0 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 102rem;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+
+.header {
+  max-width: 106rem;
+  margin: 0 auto;
+  height: 15rem;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .header {
+    height: 20rem;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 3rem;
+  width: 5rem;
+  height: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  padding-left: 2rem;
+}
+@media (max-width: 768px) {
+  .logo {
+    top: 1rem;
+  }
+}
+
+.nav {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .nav-item:last-child {
+  padding-right: 2rem;
+}
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+  }
+  .nav .nav-item:last-child {
+    padding-right: 0;
+  }
+}
+
+.nav-item {
+  padding-left: 5rem;
+}
+@media (max-width: 768px) {
+  .nav-item {
+    padding: 1rem 0;
+    border: 1px solid #999;
+    width: calc((100% - 0.4rem) / 2);
+  }
+}
+
+.nav-link {
+  color: #666;
+}
+
+.cover {
+  background-color: #f2f9fa;
+  height: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.cover-box {
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50%;
+  height: 60%;
+  max-width: 600px;
+  padding: 3rem;
+}
+@media (max-width: 768px) {
+  .cover-box {
+    text-align: start;
+  }
+}
+
+.top-title {
+  font-size: 2.4rem;
+  font-weight: 100;
+  line-height: 2.5;
+  color: #333;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+  .top-title {
+    writing-mode: vertical-rl;
+    font-size: 1.6rem;
+    margin: 0 auto;
+  }
+}
+
+.circle {
+  position: absolute;
+  background-color: #d8f3fa;
+  border-radius: 50%;
+}
+
+.circle1 {
+  width: 15rem;
+  height: 15rem;
+  top: 10%;
+  left: 5%;
+}
+
+.circle2 {
+  width: 10rem;
+  height: 10rem;
+  top: 40%;
+  left: 15%;
+}
+
+.circle3 {
+  width: 8rem;
+  height: 8rem;
+  top: 80%;
+  left: 12%;
+}
+
+.circle4 {
+  width: 8rem;
+  height: 8rem;
+  top: 15%;
+  right: 5%;
+}
+
+.circle5 {
+  width: 10rem;
+  height: 10rem;
+  top: 40%;
+  right: 10%;
+}
+
+.circle6 {
+  width: 15rem;
+  height: 15rem;
+  top: 75%;
+  right: 5%;
+}
+
+@media (max-width: 768px) {
+  .circle2, .circle4, .circle6 {
+    display: none;
+  }
+}
+.animated {
+  transition: all 0.7s;
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.about {
+  width: calc(100% - 6rem);
+}
+
+.about-img-box {
+  width: calc((100% - 5rem) * 0.33);
+}
+@media (max-width: 768px) {
+  .about-img-box {
+    width: 66%;
+  }
+}
+
+.about-text {
+  width: calc((100% - 5rem) * 0.66);
+}
+@media (max-width: 768px) {
+  .about-text {
+    width: 100%;
+  }
+}
+
+.profile-box {
+  margin: 0;
+  padding: 2rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+@media (max-width: 768px) {
+  .profile-box {
+    padding: 0;
+  }
+}
+
+.profile-p {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .profile-p {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+  }
+}
+
+.skill-item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 6rem);
+  padding: 0 3rem;
+}
+
+.skill-title {
+  text-size: 3rem;
+  font-weight: 200;
+  margin: 2rem;
+}
+
+.skill-img {
+  width: 15rem;
+  height: 15rem;
+  background-color: #f2f9fa;
+  border-radius: 50%;
+}
+
+.skill-text {
+  height: 16rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding: 0 2rem;
+}
+@media (max-width: 768px) {
+  .skill-text {
+    height: 15rem;
+    padding: 0;
+  }
+}
+
+.work-item {
+  background-color: #f2f9fa;
+  width: calc(100% - 6rem);
+  height: 25rem;
+  margin: 0 3rem;
+}
+@media (max-width: 768px) {
+  .work-item {
+    margin-bottom: 2rem;
+  }
+}
+
+.contact {
+  max-width: 102rem;
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+@media (max-width: 768px) {
+  .contact {
+    padding: 0 3rem;
+    font-size: 1.6rem;
+  }
+}
+
+.contact-text {
+  margin: 0;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 25rem;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .icon-box {
+    max-width: 20rem;
+  }
+}
+
+.icon {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: #f2f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.6rem;
+}
+@media (max-width: 768px) {
+  .icon {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.4rem;
+  }
+}
+
+.footer {
+  max-width: 102rem;
+  margin: 0 auto;
+  height: 10rem;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .footer {
+    height: 15rem;
+  }
+}
+
+.footer-nav {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav .nav-item:first-child {
+  padding-left: 2rem;
+}
+@media (max-width: 768px) {
+  .footer-nav {
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-nav .nav-item:first-child {
+    padding-left: 0;
+  }
+}
+
+.copylight {
+  position: absolute;
+  bottom: 5rem;
+  right: 0;
+  font-size: 1.8rem;
+}
+@media (max-width: 768px) {
+  .copylight {
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: #f2f9fa;
+  color: #666;
+  opacity: 0.6;
+  font-size: 1.6rem;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* マウスを乗せた時に透明度を変える */
+.back-to-top:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
